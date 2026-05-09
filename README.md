@@ -39,6 +39,28 @@ O principal objetivo de utilizar estruturas encadeadas é a flexibilidade de tam
 ---
 
 ## Como executar 
+
 ```bash
 g++ main.cpp -Iincludes -o build/program
 ./build/program
+```
+
+## Exemplo de uso
+
+```cpp
+Stack<int> stack;
+
+stack.push(10);
+stack.push(20);
+stack.push(30);
+stack.push(40);
+stack.push(50);
+
+stack.print(std::cout);
+std::cout << std::endl;
+```
+
+### Saída esperada
+```bash
+[50, 40, 30, 20, 10]
+```
