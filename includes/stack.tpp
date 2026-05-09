@@ -48,3 +48,23 @@ template<typename T>
 std::size_t Stack<T>::size() const {
     return tamanho;
 }
+template<typename T>
+void Stack<T>::print(std::ostream& os) const {
+    Node* atual = topo.get();
+
+    os << "[";
+
+    bool first = true;
+    while(atual != nullptr) {
+        if(!first) {
+            os << ", ";
+        }
+
+        os << atual->valor;
+        
+        atual = atual->prox.get();
+        first = false;
+    }
+
+    os << "]";
+}

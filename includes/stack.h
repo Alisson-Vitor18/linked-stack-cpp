@@ -33,6 +33,9 @@ class Stack {
 
         //Retorna o tamanho da pilha
         std::size_t size() const;
+
+        //Imprime a pilha
+        void print(std::ostream& os = std::cout) const;
 };
 
 #include "stack.tpp"
