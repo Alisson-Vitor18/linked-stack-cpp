@@ -1,7 +1,6 @@
 #include <iostream>
 #include <stdexcept>
 #include <memory>
-#include "stack.h"
 
 template<typename T>
 Stack<T>::Node::Node(const T& valor, std::unique_ptr<Node>prox) 
