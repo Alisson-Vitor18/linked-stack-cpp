@@ -36,3 +36,17 @@ void Stack<T>::pop() {
 
     return true;
 }
+
+template<typename T>
+T& Stack<T>::top() {
+    if(empty()) {
+        throw std::exception("A pilha está vazia");
+    }
+
+    return topo->valor;
+}
+
+template<typename T>
+std::size_t Stack<T>::size() const {
+    return tamanho;
+}
