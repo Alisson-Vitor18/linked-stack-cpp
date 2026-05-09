@@ -41,8 +41,8 @@ O principal objetivo de utilizar estruturas encadeadas é a flexibilidade de tam
 ## Como executar 
 
 ```bash
-g++ main.cpp -Iincludes -o build/program
-./build/program
+g++ main.cpp -Iincludes -o program
+./program
 ```
 
 ## Exemplo de uso 
