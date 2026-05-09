@@ -1,6 +1,4 @@
 #include <iostream>
-#include <stack>
-#include <memory>
 #include "stack.h"
 
 int main() {
