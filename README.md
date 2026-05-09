@@ -45,22 +45,35 @@ g++ main.cpp -Iincludes -o build/program
 ./build/program
 ```
 
-## Exemplo de uso
+## Exemplo de uso 
 
 ```cpp
 Stack<int> stack;
 
-stack.push(10);
-stack.push(20);
-stack.push(30);
-stack.push(40);
-stack.push(50);
+stack.push(1);
+stack.push(2);
+stack.push(3);
+stack.push(4);
+stack.push(5);
 
-stack.print(std::cout);
+stack.print(std::cout); 
+std::cout << std::endl;
+
+std::cout << std::endl;
+std::cout << "Removendo valor \"" << stack.top() << "\" da pilha\n";
+stack.pop();
+std::cout << std::endl;
+
+stack.print(std::cout); 
 std::cout << std::endl;
 ```
 
 ### Saída esperada
 ```bash
-[50, 40, 30, 20, 10]
+[5, 4, 3, 2, 1]
+
+Removendo valor "5" da pilha
+
+[4, 3, 2, 1]
+
 ```

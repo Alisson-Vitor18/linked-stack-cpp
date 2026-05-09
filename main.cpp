@@ -18,6 +18,14 @@ int main() {
     std::cout << std::endl;
 
     std::cout << std::endl;
+    std::cout << "Removendo valor \"" << stack.top() << "\" da pilha\n";
+    stack.pop();
+    std::cout << std::endl;
+
+    stack.print(std::cout); 
+    std::cout << std::endl;
+
+    std::cout << std::endl;
     std::stack<int> stack_cpp;
     stack_cpp.push(1);
     stack_cpp.push(2);
