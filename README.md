@@ -77,3 +77,51 @@ Removendo valor "5" da pilha
 [4, 3, 2, 1]
 
 ```
+
+## Sobre a std::stack (C++ STL)
+
+A linguagem C++ já fornece uma implementação pronta de pilha através da `std::stack`, presente na Standard Template Library (STL). Essa estrutura é altamente otimizada, testada e utilizada em projetos reais.
+
+No dia a dia do desenvolvimento, o uso de ferramentas já prontas fornecidas pela linguagem é preferível, pois evita a necessidade de reimplementar funcionalidades já prontas.
+
+---
+
+### Exemplo de uso com a std::stack
+
+```cpp
+#include <iostream>
+#include <stack>
+
+void print_stack_cpp(std::stack<int>& stack_cpp);
+
+int main() {
+    std::stack<int> stack_cpp;
+
+    stack_cpp.push(1);
+    stack_cpp.push(2);
+    stack_cpp.push(3);
+    stack_cpp.push(4);
+    stack_cpp.push(5);
+
+    print_stack_cpp(stack_cpp);
+    std::cout << std::endl;
+}
+
+void print_stack_cpp(std::stack<int>& stack_cpp) {
+    bool first = true;
+    std::cout << "[";
+
+    while (!stack_cpp.empty()) {
+        if (!first) std::cout << ", ";
+        std::cout << stack_cpp.top();
+        stack_cpp.pop();
+        first = false;
+    }
+
+    std::cout << "]";
+}
+```
+### Saída esperada
+```bash
+[5, 4, 3, 2, 1]
+```
