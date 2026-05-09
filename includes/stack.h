@@ -8,19 +8,30 @@ class Stack {
             T valor;
             std::unique_ptr<Node> prox;
 
+            //Construtor da classe nó
             Node(const T& valor, 
                 std::unique_ptr<Node>prox = nullptr);
         };
-        std::unique_ptr<Node> topo;
-        std::size_t tamanho;
+        std::unique_ptr<Node> topo = nullptr;
+        std::size_t tamanho = 0;
 
     public:
+        //Construtor da classe Stack
         Stack();
 
-        bool push(const T& valor);
-        bool pop();
+        //Verifica se a pilha está vazia
         bool empty() const;
+
+        //Insere um novo nó na pilha
+        void push(const T& valor);
+        
+        //Remove um nó da pilha
+        void pop();
+
+        //Retorna o valor do topo atual
         T& top();
+
+        //Retorna o tamanho da pilha
         std::size_t size() const;
 };
 
