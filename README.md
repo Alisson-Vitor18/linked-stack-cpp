@@ -125,3 +125,21 @@ void print_stack_cpp(std::stack<int>& stack_cpp) {
 ```bash
 [5, 4, 3, 2, 1]
 ```
+
+---
+
+## Objetivo do projeto
+
+Este projeto foi desenvolvido **exclusivamente para fins de estudo e demonstração**, com o objetivo de entender como estruturas encadeadas podem ser implementadas em C++.
+
+---
+
+## Conclusão
+
+Embora a implementação própria seja importante para fins educacionais, em projetos reais é sempre recomendado utilizar ferramentas prontas como a `std::stack`, que oferecem melhor desempenho, segurança e manutenção.
+
+---
+
+## Autor
+
+Desenvolvido por **Alisson Vitor Pereira Barbosa**
