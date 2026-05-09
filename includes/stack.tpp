@@ -4,7 +4,7 @@
 #include "stack.h"
 
 template<typename T>
-Stack<T>::Node::Node(const T& valor, std::unique_ptr<Node>prox = nullptr) 
+Stack<T>::Node::Node(const T& valor, std::unique_ptr<Node>prox) 
     : valor(valor), prox(std::move(prox)) {}
 
 template<typename T>
@@ -33,14 +33,12 @@ void Stack<T>::pop() {
 
     topo = std::move(topo->prox);
     --tamanho;
-
-    return true;
 }
 
 template<typename T>
 T& Stack<T>::top() {
     if(empty()) {
-        throw std::exception("A pilha está vazia");
+        throw std::runtime_error("A pilha está vazia");
     }
 
     return topo->valor;
