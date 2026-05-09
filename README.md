@@ -2,6 +2,8 @@
 
 Este projeto implementa uma pilha encadeada em C++ utilizando templates, permitindo o armazenamento genérico de dados. O objetivo é estudar estruturas de dados em C++, também será feito uso da `std::stack` da STL a fins de demonstração.
 
+---
+
 ## O que é uma pilha encadeada
 
 Pilhas encadeadas são estruturas de dados que seguem o princípio LIFO (Last In, First Out — Último a Entrar, Primeiro a Sair). Elas são amplamente utilizadas na programação em diversas situações do dia a dia, como:
@@ -14,6 +16,8 @@ Pilhas encadeadas são estruturas de dados que seguem o princípio LIFO (Last In
 ### Por que usar estruturas encadeadas?
 O principal objetivo de utilizar estruturas encadeadas é a flexibilidade de tamanho, já que não é necessário definir um limite fixo de elementos previamente. Dessa forma, evita-se o problema de _stack overflow_, desde que haja memória disponível no sistema.
 
+---
+
 ## Funcionalidades 
 
 - Push (empilhar elementos)
@@ -23,3 +27,18 @@ O principal objetivo de utilizar estruturas encadeadas é a flexibilidade de tam
 - Size (tamanho da pilha)
 - Print (imprime a pilha)
 - Implementação genérica com templates
+
+---
+
+## Tecnologias 
+
+- C++
+- Templates
+- Estruturas de dados encadeadas 
+
+---
+
+## Como executar 
+```bash
+g++ main.cpp -Iincludes -o build/program
+./build/program
